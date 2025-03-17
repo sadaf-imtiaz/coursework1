@@ -20,13 +20,19 @@ def decimal_to_hex(decimal_value):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:  # Ensure exactly one argument is provided
-        print("Error: Please provide exactly one integer as input.")
+        print("Error: Please provide exactly one positive integer as input.")
         sys.exit(1)  # Exit with an error code
 
     try:
         decimal_value = int(sys.argv[1])  # Convert input to integer
+
+        if decimal_value < 0:
+            print("Error: Negative numbers are not supported. Please enter a positive integer.")
+            sys.exit(1)
+
         result = decimal_to_hex(decimal_value)
         print(f"Hexadecimal Output: {result}")
+
     except ValueError:
-        print("Error: Invalid input. Please provide a valid integer.")
+        print("Error: Invalid input. Please provide a valid positive integer.")
         sys.exit(1)  # Exit with an error code
