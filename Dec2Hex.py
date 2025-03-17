@@ -24,6 +24,6 @@ if __name__ == "__main__":
             decimal_value = int(sys.argv[1])
             decimal_to_hex(decimal_value)
         except ValueError:
-            print("Please provide a valid integer.")
+            print(" Always Please provide a valid integer.")
     else:
         print("Usage: python script.py <decimal_number>")
