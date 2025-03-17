@@ -7,7 +7,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from Dec2Hex import decimal_to_hex  # Now it should work!
 import unittest
 
-class TestDex2Hex(unittest.TestCase):
+class TestDec2Hex(unittest.TestCase):
     def test_positive_number(self):
         self.assertEqual(decimal_to_hex(255), "FF")
 
