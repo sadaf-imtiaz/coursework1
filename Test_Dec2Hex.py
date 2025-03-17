@@ -4,7 +4,7 @@ import os
 # Add current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from Dex2Hex import decimal_to_hex  # Now it should work!
+from Dec2Hex import decimal_to_hex  # Now it should work!
 import unittest
 
 class TestDex2Hex(unittest.TestCase):
